@@ -1,0 +1,179 @@
+
+
+body{
+    background-color: rgb(0, 0, 0);
+    margin-top: 0;
+    display:inline-block;
+    
+    
+    
+}
+/*added by chat GPT to align!!!!! (Need to study!!)*/
+.top-bar {
+    
+    display: flex;      
+    align-items: center;        /*Need to remove a small line at the very top*/
+    background-color: rgb(25,25,25);
+  
+}
+
+.top-bar img {
+
+    width: 40px;;
+    padding:20px;
+    float: left;  /*Might need to remove??*/
+}
+
+.top-bar #phonehub {
+    color: white;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+
+#hub{
+    display:inline;
+    color: rgb(0, 0, 0);
+    background-color: orange;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 4px;
+    
+}
+
+#searchbar {
+
+display: inline-block;
+margin-left: 7%;
+text-align: center;
+border-style: none;
+padding: 10px;
+padding-left: 40vh;
+padding-right: 40vh;
+padding-top: 13px;
+padding-bottom: 13px;
+border-radius: 20px;
+background-color: rgb(68, 68, 68);
+}
+
+
+#aiphones{
+    background-color:orange;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: Arial;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 20px;
+    border-style: none;
+    font-weight: 600;  /*Need to make a bit lighter*/
+}
+
+#uploadvideo{
+margin-left: 2px;
+padding-top: 20px;
+}
+
+#uploadpic{
+    padding-left: 0;
+    padding-top: 20px;
+}
+#user{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    width: 40px;
+}
+
+
+/*Nav bar section */
+
+.option-layout{
+    text-align: center;
+    padding-top: 0px;
+    background-color: rgb(26, 26, 26);
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.option-layout button{
+    padding: 0px;
+    border: none;
+    background: none;
+ /*find what else*/
+    border: none;
+    font-size: 19px;
+    color: white;
+    border-style: hidden;
+    display:inline;
+    padding-left: 60px;
+    margin-left: 10px;
+}
+
+/*Individual phones*/
+#phonev{
+content: ' \02C5';
+}
+
+/*Banner */
+.banner img{
+    align-content: center;
+    margin-left: 11.4vh;
+    margin-right: 10vh;
+    height: auto;
+    background-color: red;
+    display: inline;
+    align-items: center;
+}
+.banner #text{
+    font-family: Arial;
+    margin-left: 40px;
+    display: inline-flex;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    text-align: left;
+    
+}
+.banner #usa{
+    size: 29px;
+    width: 2.9vh;
+    display: inline;
+    border-radius: 200%;
+    margin-left: 20px;
+}
+
+
+
+/*selections*/
+
+.selections button{
+    background-color: rgb(47, 47, 47);
+    display:inline;
+    font-size: 20px;
+    margin-top: 10px;              
+    font-family: arial;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    
+    margin-left: 9px;
+    align-items: center;
+    border-style: solid;
+    border-color: rgb(60,60,60);
+    border-width: 2px;
+    
+}
+
+.grid div { 
+  display: grid;
+  grid-template-columns: 80px 200px auto 40px;
+  width: 50px;
+  height: 30px;
+  background-color: red;
+}
