@@ -1,179 +1,151 @@
-
-
-body{
-    background-color: rgb(0, 0, 0);
-    margin-top: 0;
-    display:inline-block;
-    
-    
-    
+/*Ne version*/
+*{
+    margin: 0;
+    padding: 0;
 }
-/*added by chat GPT to align!!!!! (Need to study!!)*/
+body {
+    background-color: rgb(0, 0, 0);
+
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
 .top-bar {
-    
-    display: flex;      
-    align-items: center;        /*Need to remove a small line at the very top*/
-    background-color: rgb(25,25,25);
-  
+    display: flex;
+    align-items: center;
+    background-color: rgb(25, 25, 25);
+    padding: 10px;
 }
 
 .top-bar img {
-
-    width: 40px;;
-    padding:20px;
-    float: left;  /*Might need to remove??*/
+    width: 40px;
+    padding: 10px;
 }
 
-.top-bar #phonehub {
+#phonehub {
     color: white;
     padding-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
-    
 }
 
-#hub{
-    display:inline;
-    color: rgb(0, 0, 0);
+#hub {
+    display: inline;
+    color: black;
     background-color: orange;
     border-radius: 6px;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 4px;
-    
 }
 
 #searchbar {
-
-display: inline-block;
-margin-left: 7%;
-text-align: center;
-border-style: none;
-padding: 10px;
-padding-left: 40vh;
-padding-right: 40vh;
-padding-top: 13px;
-padding-bottom: 13px;
-border-radius: 20px;
-background-color: rgb(68, 68, 68);
+    margin-left: 7%;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    padding: 13px 100px;
+    border-radius: 20px;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    width: 30%;
+    transition: .5s;
 }
 
+#searchbar:hover{
+    transition: .5s;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
 
-#aiphones{
-    background-color:orange;
-    color: rgb(0, 0, 0);
+#aiphones {
+    background-color: orange;
+    color: black;
     border-radius: 20px;
     font-size: 20px;
-    font-family: Arial;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 12px;
-    padding-right: 12px;
+    font-weight: 600;
+    padding: 7px 12px;
     margin-left: 20px;
-    border-style: none;
-    font-weight: 600;  /*Need to make a bit lighter*/
+    border: none;
+    cursor: pointer;
 }
 
-#uploadvideo{
-margin-left: 2px;
-padding-top: 20px;
-}
-
-#uploadpic{
-    padding-left: 0;
+#uploadvideo,
+#uploadpic {
     padding-top: 20px;
+    margin-left: 10px;
+    width: 40px;
 }
-#user{
+
+#user {
     position: absolute;
     top: 8px;
     right: 16px;
     width: 40px;
 }
 
-
-/*Nav bar section */
-
-.option-layout{
+.option-layout {
     text-align: center;
-    padding-top: 0px;
     background-color: rgb(26, 26, 26);
-    padding-bottom: 20px;
-    padding-top: 10px;
+    padding: 10px 0 20px;
 }
 
-.option-layout button{
-    padding: 0px;
-    border: none;
+.option-layout button {
     background: none;
- /*find what else*/
     border: none;
-    font-size: 19px;
     color: white;
-    border-style: hidden;
-    display:inline;
+    font-size: 19px;
+    margin: 0 10px;
     padding-left: 60px;
-    margin-left: 10px;
+    display: inline-block;
+    cursor: pointer;
 }
 
-/*Individual phones*/
-#phonev{
-content: ' \02C5';
+.banner {
+    text-align: start;
+    width: 100%;
+    margin: 10px;
 }
 
-/*Banner */
-.banner img{
-    align-content: center;
-    margin-left: 11.4vh;
-    margin-right: 10vh;
+.banner img {
+    max-width: 100%;
     height: auto;
     background-color: red;
-    display: inline;
-    align-items: center;
-}
-.banner #text{
-    font-family: Arial;
-    margin-left: 40px;
-    display: inline-flex;
-    color: rgb(255, 255, 255);
-    overflow: hidden;
-    text-align: left;
-    
-}
-.banner #usa{
-    size: 29px;
-    width: 2.9vh;
-    display: inline;
-    border-radius: 200%;
-    margin-left: 20px;
 }
 
-
-
-/*selections*/
-
-.selections button{
-    background-color: rgb(47, 47, 47);
-    display:inline;
+.banner #text {
     font-size: 20px;
-    margin-top: 10px;              
-    font-family: arial;
+    margin-top: 10px;
+}
+
+.banner #usa {
+    width: 40px;
+    border-radius: 100%;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.selections {
+    text-align: center;
+    margin: 10px; /*https://www.w3schools.com/cssref/pr_pos_overflow.php*/
+    overflow-x: scroll;
+    white-space:nowrap;
+    width: 100%;
+
+}
+/* add overflow to keep sections going*/
+.selections button {
+    background-color: rgb(47, 47, 47);
+    font-size: 20px;
     color: white;
     border-radius: 30px;
     padding: 10px;
-    
-    margin-left: 9px;
-    align-items: center;
-    border-style: solid;
-    border-color: rgb(60,60,60);
-    border-width: 2px;
-    
+    margin: 4px;
+    border: 2px solid rgb(60, 60, 60);
+    cursor: pointer;
+    transition: .4s;
+}
+.selections button:hover {
+    transition: .4s;
+    background-color: rgba(82, 82, 82, 0.924);
 }
 
-.grid div { 
-  display: grid;
-  grid-template-columns: 80px 200px auto 40px;
-  width: 50px;
-  height: 30px;
-  background-color: red;
-}
