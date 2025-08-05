@@ -37,24 +37,36 @@ body {
     border-radius: 6px;
     padding: 4px;
 }
-
+/*FIX*/
 #searchbar {
-    margin-left: 7%;
+    margin-left: 5%;
+    margin-right: 3%;
     text-align: center;
     justify-content: center;
     border: none;
-    padding: 13px 100px;
+    padding: 15px 100px;
     border-radius: 20px;
     background-color: rgb(68, 68, 68);
     color: white;
     width: 30%;
     transition: .5s;
+    display: block;
+
+    text-align: start;
+
 }
+#searchbar::placeholder{
+    text-align: center;
+    display: block;
+}
+
 
 #searchbar:hover{
     transition: .5s;
     background-color: rgb(48, 48, 48);
     color: white;
+
+
 }
 
 #aiphones {
@@ -66,19 +78,27 @@ body {
     padding: 7px 12px;
     margin-left: 20px;
     border: none;
-    cursor: pointer;
+    transition: .5s;
+   
 }
 
+#aiphones:hover{
+    background-color: rgb(248, 187, 75);
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*come back to make changes*/
 #uploadvideo,
-#uploadpic {
+#uploadpic, #user {
     padding-top: 20px;
     margin-left: 10px;
     width: 40px;
 }
 
 #user {
-    position: absolute;
-    top: 8px;
+    align-items: end;
+    position:relative;
     right: 16px;
     width: 40px;
 }
@@ -90,14 +110,24 @@ body {
 }
 
 .option-layout button {
-    background: none;
-    border: none;
+    background:none;
+    border-style: none;
     color: white;
-    font-size: 19px;
-    margin: 0 10px;
-    padding-left: 60px;
-    display: inline-block;
+    font-family: arial;
+    font-size: 15px;
+    display: inline;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+    padding: 10px;
+    transition: .5s;
+}
+
+.option-layout button:hover {
+    background-color: rgba(128, 128, 128, 0.35);
     cursor: pointer;
+    transition: .5s;
 }
 
 .banner {
@@ -149,3 +179,24 @@ body {
     background-color: rgba(82, 82, 82, 0.924);
 }
 
+.grid{
+display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: dodgerblue;
+  padding: 10px;
+  padding: 20px;
+  border: solid blue;
+
+    background-color: red;
+
+}
+
+.grid div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*follow up - https://www.w3schools.com/css/tryit.asp?filename=trycss_grid*/
